@@ -4,7 +4,7 @@ Awesome description of the package here!
 `pdoc` only extracts _public API_ documentation.[^public]
 All objects (modules, functions, classes, variables) are only
 considered public if their _identifiers don't begin with an
-underscore_ ( \_ ).[^private]
+underscore_ ( \\_ ).[^private]
 
 [^public]:
     Here, public API refers to the API that is made available
