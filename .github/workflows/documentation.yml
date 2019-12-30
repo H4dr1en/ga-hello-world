@@ -1,0 +1,32 @@
+name: Auto documentation
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  auto-doc:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.6
+    - name: Update pip
+      run: |
+        python -m pip install --upgrade pip
+    - name: Build doc
+      run: |
+        pip install pdoc3
+        pdoc --html myPackage --force --output-dir docs --template-dir .pdoc
+    - name: Push doc
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git remote add github "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+        git pull github ${{ github.ref }} --ff-only
+        git add -f -A ./docs/*
+        git commit -m "Update documentation"
+        git push github HEAD:${{ github.ref }}
