@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.2" />
+<title>myPackage.myModule API documentation</title>
+<meta name="description" content="Awesome description of the Module here! Let&#39;s inject here below the content of
+a MD file: …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>myPackage.myModule</code></h1>
+</header>
+<section id="section-intro">
+<p>Awesome description of the Module here! Let's inject here below the content of
+a MD file:</p>
+<p><code>pdoc</code> extracts documentation of:</p>
+<ul>
+<li>modules (including submodules),</li>
+<li>functions (including methods, properties, coroutines &hellip;),</li>
+<li>classes, and</li>
+<li>variables (including globals, class variables, and instance variables).</li>
+</ul>
+<p>Documentation is extracted from live objects' <a href="https://docs.python.org/3/glossary.html#term-docstring">docstrings</a>
+using Python's <code>__doc__</code> attribute<sup id="fnref:execution"><a class="footnote-ref" href="#fn:execution">1</a></sup>. Documentation for
+variables is found by examining objects' abstract syntax trees.</p>
+<h2 id="what-objects-are-documented">What objects are documented?</h2>
+<p><code>pdoc</code> only extracts <em>public API</em> documentation.<sup id="fnref:public"><a class="footnote-ref" href="#fn:public">2</a></sup>
+All objects (modules, functions, classes, variables) are only
+considered public if their <em>identifiers don't begin with an
+underscore</em> ( _ ).<sup id="fnref:private"><a class="footnote-ref" href="#fn:private">3</a></sup></p>
+<p>In addition, if a module defines <a href="https://docs.python.org/3/tutorial/modules.html#importing-from-a-package"><code>__all__</code></a>, then only
+the identifiers contained in this list will be considered public.
+Otherwise, a module's global identifiers are considered public
+only if they don't begin with an underscore and are defined
+in this exact module (i.e. not imported from somewhere else).</p>
+<p>By transitivity, sub-objects of non-public objects
+(e.g. submodules of non-public modules, methods of non-public classes etc.)
+are not public and thus not documented.</p>
+<h2 id="where-does-pdoc-get-documentation-from">Where does <code>pdoc</code> get documentation from?</h2>
+<p>In Python, objects like modules, functions, classes, and methods
+have a special attribute <code>__doc__</code> which contains that object's
+documentation string (<a href="https://docs.python.org/3/glossary.html#term-docstring">docstring</a>).
+For example, the following code defines a function with a docstring
+and shows how to access its contents:</p>
+<pre><code>&gt;&gt;&gt; def test():
+...     """This is a docstring."""
+...     pass
+...
+&gt;&gt;&gt; test.__doc__
+'This is a docstring.'
+</code></pre>
+<p>It's pretty much the same with classes and modules.
+See <a href="https://www.python.org/dev/peps/pep-0257/">PEP-257</a> for Python docstring conventions.</p>
+<p>These docstrings are set as descriptions for each module, class,
+function, and method listed in the documentation produced by <code>pdoc</code>.</p>
+<p><code>pdoc</code> extends the standard use of docstrings in Python in two
+important ways: by allowing methods to inherit docstrings, and
+by introducing syntax for docstrings for variables.</p>
+<h3 id="docstrings-inheritance">Docstrings inheritance</h3>
+<p><code>pdoc</code> considers methods' docstrings inherited from superclass methods',
+following the normal class inheritance patterns.
+Consider the following code example:</p>
+<pre><code>&gt;&gt;&gt; class A:
+...     def test(self):
+...         """Docstring for A."""
+...         pass
+...
+&gt;&gt;&gt; class B(A):
+...     def test(self):
+...         pass
+...
+&gt;&gt;&gt; A.test.__doc__
+'Docstring for A.'
+&gt;&gt;&gt; B.test.__doc__
+None
+</code></pre>
+<p>In Python, the docstring for <code>B.test</code> doesn't exist, even though a
+docstring was defined for <code>A.test</code>.
+When <code>pdoc</code> generates documentation for the code such as above,
+it will automatically attach the docstring for <code>A.test</code> to
+<code>B.test</code> if <code>B.test</code> does not define its own docstring.
+In the default HTML template, such inherited docstrings are greyed out.</p>
+<h3 id="docstrings-for-variables">Docstrings for variables</h3>
+<p>Python by itself <a href="http://www.python.org/dev/peps/pep-0224">doesn't allow docstrings attached to variables</a>.
+However, <code>pdoc</code> supports docstrings attached to module (or global)
+variables, class variables, and object instance variables; all in
+the same way as proposed in <a href="http://www.python.org/dev/peps/pep-0224">PEP-224</a>, with a docstring following the
+variable assignment.
+For example:</p>
+<pre><code>module_variable = 1
+"""Docstring for module_variable."""
+
+class C:
+    class_variable = 2
+    """Docstring for class_variable."""
+
+    def __init__(self):
+        self.variable = 3
+        """Docstring for instance variable."""
+</code></pre>
+<p>While the resulting variables have no <code>__doc__</code> attribute,
+<code>pdoc</code> compensates by reading the source code (when available)
+and parsing the syntax tree.</p>
+<p>By convention, variables defined in a class' <code>__init__</code> method
+and attached to <code>self</code> are considered and documented as
+instance variables.</p>
+<p>Class and instance variables can also <a href="#docstrings-inheritance">inherit docstrings</a>.</p>
+<h2 id="overriding-docstrings-with-__pdoc__">Overriding docstrings with <code>__pdoc__</code></h2>
+<p>Docstrings for objects can be disabled or overridden with a special
+module-level dictionary <code>__pdoc__</code>. The <em>keys</em>
+should be string identifiers within the scope of the module or,
+alternatively, fully-qualified reference names. E.g. for instance
+variable <code>self.variable</code> of class <code>C</code>, its module-level identifier is
+<code>'C.variable'</code>.</p>
+<p>If <code>__pdoc__[key] = False</code>, then <code>key</code> (and its members) will be
+<strong>excluded from the documentation</strong> of the module.</p>
+<p>Alternatively, the <em>values</em> of <code>__pdoc__</code> should be the overriding docstrings.
+This particular feature is useful when there's no feasible way of
+attaching a docstring to something. A good example of this is a
+<a href="https://docs.python.org/3/library/collections.html#collections.namedtuple">namedtuple</a>:</p>
+<pre><code>__pdoc__ = {}
+
+Table = namedtuple('Table', ['types', 'names', 'rows'])
+__pdoc__['Table.types'] = 'Types for each column in the table.'
+__pdoc__['Table.names'] = 'The names of each column in the table.'
+__pdoc__['Table.rows'] = 'Lists corresponding to each row in the table.'
+</code></pre>
+<p><code>pdoc</code> will then show <code>Table</code> as a class with documentation for the
+<code>types</code>, <code>names</code> and <code>rows</code> members.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The assignments to <code>__pdoc__</code> need to be placed where they'll be
+executed when the module is imported. For example, at the top level
+of a module or in the definition of a class.</p>
+</div>
+<h2 id="supported-docstring-formats">Supported docstring formats</h2>
+<p>Currently, pure Markdown (with <a href="https://python-markdown.github.io/extensions/#officially-supported-extensions">extensions</a>), <a href="https://numpydoc.readthedocs.io/">numpydoc</a>,
+and <a href="http://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings">Google-style</a> docstrings formats are supported,
+along with some <a href="#supported-rest-directives"><abbr title="reStructuredText">reST</abbr> directives</a>.</p>
+<p>Additionally, if <code>latex_math</code> <a href="#custom-templates">template config</a> option is enabled,
+LaTeX math syntax is supported when placed between
+<a href="https://docs.mathjax.org/en/latest/input/tex/delimiters.html">recognized delimiters</a>: <code>\(...\)</code> for inline equations and
+<code>\[...\]</code> or <code>$$...$$</code> for block equations. Note, you need to escape
+your backslashes in Python docstrings (<code>\\(</code>, <code>\\frac{}{}</code>, &hellip;)
+or, alternatively, use <a href="https://www.journaldev.com/23598/python-raw-string">raw string literals</a>.</p>
+<h3 id="supported-rest-directives">Supported <abbr title="reStructuredText">reST</abbr> directives</h3>
+<p>The following <abbr title="reStructuredText">reST</abbr> directives should work:</p>
+<ul>
+<li>specific and generic <a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">admonitions</a>,</li>
+<li><a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#images"><code>.. image::</code></a> or <code>.. figure::</code> (without options),</li>
+<li><a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#including-an-external-document-fragment"><code>.. include::</code></a>, with support for the options:
+<code>:start-line:</code>, <code>:end-line:</code>, <code>:start-after:</code> and <code>:end-before:</code>.</li>
+<li><a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#math"><code>.. math::</code></a></li>
+<li><code>.. versionadded::</code></li>
+<li><code>.. versionchanged::</code></li>
+<li><code>.. deprecated::</code></li>
+<li><code>.. todo::</code></li>
+</ul>
+<h2 id="linking-to-other-identifiers">Linking to other identifiers</h2>
+<p>In your documentation, you may refer to other identifiers in
+your modules. When exporting to HTML, linking is automatically
+done whenever you surround an identifier with <a href="https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming">backticks</a> ( ` ).
+The identifier name must be fully qualified, for example
+<code>`pdoc.Doc.docstring`</code> is correct (and will link to
+<code>pdoc.Doc.docstring</code>) while <code>`Doc.docstring`</code> is <em>not</em>.</p>
+<h2 id="command-line-interface">Command-line interface</h2>
+<p><code>pdoc</code> includes a feature-rich "binary" program for producing
+HTML and plain text documentation of your modules.
+For example, to produce HTML documentation of your whole package
+in subdirectory 'build' of the current directory, using the default
+HTML template, run:</p>
+<pre><code>$ pdoc --html --output-dir build my_package
+</code></pre>
+<p>If you want to omit the source code preview, run:</p>
+<pre><code>$ pdoc --html --config show_source_code=False my_package
+</code></pre>
+<p>Find additional template configuration tunables in <a href="#custom-templates">Custom templates</a>
+section below.</p>
+<p>To run a local HTTP server while developing your package or writing
+docstrings for it, run:</p>
+<pre><code>$ pdoc --http : my_package
+</code></pre>
+<p>To re-build documentation as part of your continuous integration (CI)
+best practice, i.e. ensuring all reference links are correct and
+up-to-date, make warnings error loudly by settings the environment
+variable <a href="https://docs.python.org/3/using/cmdline.html#envvar-PYTHONWARNINGS"><code>PYTHONWARNINGS</code></a> before running pdoc:</p>
+<pre><code>$ export PYTHONWARNINGS='error::UserWarning'
+</code></pre>
+<p>For brief usage instructions, type:</p>
+<pre><code>$ pdoc --help
+</code></pre>
+<p>Even more usage examples can be found in the <a href="https://github.com/pdoc3/pdoc/issues?q=is%3Aissue+label%3Aquestion">FAQ</a>.</p>
+<h2 id="programmatic-usage">Programmatic usage</h2>
+<p>The main entry point is <code>pdoc.Module</code> which wraps a module object
+and recursively imports and wraps any submodules and their members.</p>
+<p>After all related modules are wrapped (related modules are those that
+share the same <code>pdoc.Context</code>), you need to call
+<code>pdoc.link_inheritance</code> with the used <code>Context</code> instance to
+establish class inheritance links.</p>
+<p>Afterwards, you can use <code>pdoc.Module.html</code> and <code>pdoc.Module.text</code>
+methods to output documentation in the desired format.
+For example:</p>
+<pre><code>import pdoc
+
+modules = ['a', 'b']  # Public submodules are auto-imported
+context = pdoc.Context()
+
+modules = [pdoc.Module(mod, context=context)
+           for mod in modules]
+pdoc.link_inheritance(context)
+
+def recursive_htmls(mod):
+    yield mod.name, mod.html()
+    for submod in mod.submodules():
+        yield from recursive_htmls(submod)
+
+for mod in modules:
+    for module_name, html in recursive_htmls(mod):
+        ...  # Process
+</code></pre>
+<p>When documenting a single module, you might find
+functions <code>pdoc.html</code> and <code>pdoc.text</code> handy.
+For importing arbitrary modules/files, use <code>pdoc.import_module</code>.</p>
+<p>Alternatively, use the <a href="#command-line-interface">runnable script</a> included with this package.</p>
+<h2 id="custom-templates">Custom templates</h2>
+<p>To override the built-in HTML/CSS and plain text templates, copy
+the relevant templates from <code>pdoc/templates</code> directory into a directory
+of your choosing and edit them. When you run <a href="#command-line-interface">pdoc command</a>
+afterwards, pass the directory path as a parameter to the
+<code>--template-dir</code> switch.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you find you only need to apply minor alterations to the HTML template,
+see if you can do so by overriding just some of the following, placeholder
+sub-templates:</p>
+<ul>
+<li><a href="https://github.com/pdoc3/pdoc/blob/master/pdoc/templates/config.mako"><em>config.mako</em></a>: Basic template configuration, affects the way templates
+are rendered.</li>
+<li><em>head.mako</em>: Included just before <code>&lt;/head&gt;</code>. Best for adding resources and styles.</li>
+<li><em>logo.mako</em>: Included at the very top of the navigation sidebar. Empty by default.</li>
+<li><em>credits.mako</em>: Included in the footer, right before pdoc version string.</li>
+</ul>
+<p>See <a href="https://github.com/pdoc3/pdoc/tree/master/pdoc/templates">default template files</a> for reference.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also alter individual <a href="https://github.com/pdoc3/pdoc/blob/master/pdoc/templates/config.mako"><em>config.mako</em></a> preferences using the
+<code>--config</code> command-line switch.</p>
+</div>
+<p>If working with <code>pdoc</code> programmatically, <em>prepend</em> the directory with
+modified templates into the <code>directories</code> list of the
+<code>pdoc.tpl_lookup</code> object.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p><code>pdoc</code> requires Python 3.5+.
+The last version to support Python 2.x is <a href="https://pypi.org/project/pdoc3/0.3.11/">pdoc3 0.3.x</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p><code>pdoc</code> is <a href="https://github.com/pdoc3/pdoc">on GitHub</a>. Bug reports and pull requests are welcome.</p>
+<h2 id="license">License</h2>
+<p><code>pdoc</code> is licensed under the terms of GNU <a href="https://www.gnu.org/licenses/agpl-3.0.html" rel="license">AGPL-3.0</a> or later,
+meaning you can use it for any reasonable purpose and remain in
+complete ownership of all the documentation you produce,
+but you are also encouraged to make sure any upgrades to <code>pdoc</code>
+itself find their way back to the community.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:execution">
+<p>Documented modules are executed in order to provide <code>__doc__</code>
+attributes. Any non-fenced global code in imported modules will
+affect the current environment.&#160;<a class="footnote-backref" href="#fnref:execution" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:public">
+<p>Here, public API refers to the API that is made available
+to your project end-users, not the public API e.g. of a
+private class that can be reasonably extended elsewhere
+by your project developers.&#160;<a class="footnote-backref" href="#fnref:public" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:private">
+<p>Prefixing private, implementation-specific objects with
+an underscore is <a href="https://docs.python.org/3/tutorial/classes.html#private-variables">a common convention</a>.&#160;<a class="footnote-backref" href="#fnref:private" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+<a href="https://github.com/H4dr1en/ga-hello-world/blob/b8344bb8255af4e215ca2fc0b7d8e9cece5e6b54/myPackage/myModule.py#L0-L27" class="git-link">Browse git</a>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+Awesome description of the Module here! Let&#39;s inject here below the content of
+a MD file:
+
+.. include:: ./documentation.md
+&#34;&#34;&#34;
+
+
+class Foo:
+
+    &#34;&#34;&#34;
+    A very cool class!
+    &#34;&#34;&#34;
+
+    def bar(self, cool_param=None):
+        &#34;&#34;&#34;
+        Very cool function!
+
+        .. versionadded:: 0.1
+        .. todo:: Build amazing things!
+
+        Arguments:
+            cool_param {bool} -- cool description of the param! (default: {None})
+
+        Returns:
+            bool -- Always True
+        &#34;&#34;&#34;
+        return True</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="myPackage.myModule.Foo"><code class="flex name class">
+<span>class <span class="ident">Foo</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>A very cool class!</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+<a href="https://github.com/H4dr1en/ga-hello-world/blob/b8344bb8255af4e215ca2fc0b7d8e9cece5e6b54/myPackage/myModule.py#L9-L28" class="git-link">Browse git</a>
+</summary>
+<pre><code class="python">class Foo:
+
+    &#34;&#34;&#34;
+    A very cool class!
+    &#34;&#34;&#34;
+
+    def bar(self, cool_param=None):
+        &#34;&#34;&#34;
+        Very cool function!
+
+        .. versionadded:: 0.1
+        .. todo:: Build amazing things!
+
+        Arguments:
+            cool_param {bool} -- cool description of the param! (default: {None})
+
+        Returns:
+            bool -- Always True
+        &#34;&#34;&#34;
+        return True</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="myPackage.myModule.Foo.bar"><code class="name flex">
+<span>def <span class="ident">bar</span></span>(<span>self, cool_param=None)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Very cool function!</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;0.1</p>
+</div>
+<div class="admonition todo">
+<p class="admonition-title">TODO</p>
+<p>Build amazing things!</p>
+</div>
+<h2 id="arguments">Arguments</h2>
+<p>cool_param {bool} &ndash; cool description of the param! (default: {None})</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code> &ndash; <code>Always</code> <code>True</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+<a href="https://github.com/H4dr1en/ga-hello-world/blob/b8344bb8255af4e215ca2fc0b7d8e9cece5e6b54/myPackage/myModule.py#L15-L28" class="git-link">Browse git</a>
+</summary>
+<pre><code class="python">def bar(self, cool_param=None):
+    &#34;&#34;&#34;
+    Very cool function!
+
+    .. versionadded:: 0.1
+    .. todo:: Build amazing things!
+
+    Arguments:
+        cool_param {bool} -- cool description of the param! (default: {None})
+
+    Returns:
+        bool -- Always True
+    &#34;&#34;&#34;
+    return True</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul>
+<li><a href="#what-objects-are-documented">What objects are documented?</a></li>
+<li><a href="#where-does-pdoc-get-documentation-from">Where does pdoc get documentation from?</a><ul>
+<li><a href="#docstrings-inheritance">Docstrings inheritance</a></li>
+<li><a href="#docstrings-for-variables">Docstrings for variables</a></li>
+</ul>
+</li>
+<li><a href="#overriding-docstrings-with-__pdoc__">Overriding docstrings with __pdoc__</a></li>
+<li><a href="#supported-docstring-formats">Supported docstring formats</a><ul>
+<li><a href="#supported-rest-directives">Supported reST directives</a></li>
+</ul>
+</li>
+<li><a href="#linking-to-other-identifiers">Linking to other identifiers</a></li>
+<li><a href="#command-line-interface">Command-line interface</a></li>
+<li><a href="#programmatic-usage">Programmatic usage</a></li>
+<li><a href="#custom-templates">Custom templates</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="myPackage" href="index.html">myPackage</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="myPackage.myModule.Foo" href="#myPackage.myModule.Foo">Foo</a></code></h4>
+<ul class="">
+<li><code><a title="myPackage.myModule.Foo.bar" href="#myPackage.myModule.Foo.bar">bar</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.2</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
