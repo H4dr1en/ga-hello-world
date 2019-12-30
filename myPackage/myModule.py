@@ -12,14 +12,15 @@ class Foo:
     A very cool class!
     """
 
-    def bar(self, cool_param):
-        """Very cool function!
+    def bar(self, cool_param=None):
+        """
+        Very cool function!
 
         .. versionadded:: 0.1
         .. todo:: Build amazing things!
 
         Arguments:
-            cool_param {bool} -- cool description of the param!
+            cool_param {bool} -- cool description of the param! (default: {None})
 
         Returns:
             bool -- Always True
