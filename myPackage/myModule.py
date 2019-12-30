@@ -1,4 +1,27 @@
+"""
+Awesome description of the Module here! Let's inject here below the content of
+a MD file:
+
+.. include:: ./documentation.md
+"""
+
+
 class Foo:
 
-    def bar(self):
+    """
+    A very cool class!
+    """
+
+    def bar(self, cool_param):
+        """Very cool function!
+
+        .. versionadded:: 0.1
+        .. todo:: Build amazing things!
+
+        Arguments:
+            cool_param {bool} -- cool description of the param!
+
+        Returns:
+            bool -- Always True
+        """
         return True
