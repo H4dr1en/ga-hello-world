@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: Build doc
       run: |
-        pip install pdoc
+        pip install pdoc3
         pdoc --html myPackage --force --output-dir docs --template-dir .pdoc
     - name: Push doc
       run: |
