@@ -3,7 +3,7 @@ name: Auto documentation
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   auto-doc:
