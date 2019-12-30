@@ -25,8 +25,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git remote add github "https://$GITHUB_ACTOR:$GITHU_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-        git pull github ${GITHUB_REF} --ff-only
+        git remote add github "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+        git pull github ${{ github.ref }} --ff-only
         git add -f -A ./docs/*
         git commit -m "Update documentation"
-        git push github HEAD:${GITHUB_REF}
+        git push github HEAD:${{ github.ref }}
