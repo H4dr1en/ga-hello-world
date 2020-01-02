@@ -3,7 +3,9 @@ name: Build Documentation
 on:
   push:
     branches:
-      - dev
+      - master
+    paths:
+    - 'myPackage/**'
 
 jobs:
   auto-doc:
