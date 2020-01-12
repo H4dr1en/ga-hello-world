@@ -22,7 +22,7 @@ jobs:
     - name: Build doc
       run: |
         pip install pdoc3
-        pdoc --html myPackage --force --output-dir docs --template-dir .pdoc
+        pdoc --html --config show_source_code=True --config show_type_annotations=True --config show_inherited_members=True --config git_link_template="'https://github.com/H4dr1en/ga-hello-world/blob/{commit}/{path}#L{start_line}-L{end_line}'" myPackage --force --output-dir docs
     - name: Push doc
       run: |
         git config --local user.email "action@github.com"
