@@ -11,16 +11,14 @@ jobs:
   auto-doc:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python 3.6
       uses: actions/setup-python@v1
       with:
         python-version: 3.6
-    - name: Update pip
-      run: |
-        python -m pip install --upgrade pip
     - name: Build doc
       run: |
+        python -m pip install --upgrade pip
         pip install pdoc3
         pdoc --html --config show_source_code=True --config show_type_annotations=True --config show_inherited_members=True --config git_link_template="'https://github.com/H4dr1en/ga-hello-world/blob/{commit}/{path}#L{start_line}-L{end_line}'" myPackage --force --output-dir docs
     - name: Push doc
